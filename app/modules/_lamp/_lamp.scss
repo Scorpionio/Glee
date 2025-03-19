@@ -1,0 +1,117 @@
+.lamp {
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    &__inner {
+        background: #feefe2;
+        display: flex;
+        justify-content: center;
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+        height: 390px;
+        padding: 0 10px;
+        max-width: 600px;
+        width: 100%;
+    }
+    &__image {
+        transform: translateY(-85px);
+    }
+    &__content {
+        margin-left: 35px;
+    }
+    &__title {
+        font-size: 26px;
+        line-height: 32px;
+        @extend %dmsans-700;
+        color: $title;
+        max-width: 255px;
+        margin-bottom: 20px;
+    }
+    &__text {
+        line-height: 30px;
+        color: $title;
+        max-width: 330px;
+        margin-bottom: 30px;
+    }
+    &__button {
+        border-radius: 5px;
+        border: solid 1px rgb(67, 99, 114);
+        background-color: #00000000;
+        color: $text;
+        display: inline-block;
+        @extend %rubik-500;
+        cursor: pointer;
+        transition: all 0.15s linear;
+        &::after {
+            content: url(../images/icones/arrow-black.svg);
+            padding-left: 60px;
+        }
+        &:hover {
+            background-color: rgb(67, 99, 114);
+            color: white;
+            &::after {
+                content: url(../images/icones/arrow.svg);
+            }
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .lamp {
+        &__grid {
+            display: block;
+        }
+        &__inner {
+            &:not(:last-child) {
+                margin-bottom: 50px;
+            }
+        }
+        &__box {
+            max-width: 500px;
+        }
+        &__image {
+            transform: initial;
+            height: 300px;
+        }
+    }
+}
+
+@media (max-width: 628px) {
+    .lamp {
+        &__box {
+            max-width: initial;
+            justify-content: space-between;
+            padding: 0 25px;
+        }
+        &__image {
+            order: 2;
+            height: 250px;
+        }
+        &__content {
+            margin-left: 0;
+            max-width: 300px;
+        }
+    }
+}
+
+@media (max-width: 528px) {
+    .lamp {
+        &__box {
+            overflow: hidden;
+            padding: 10px;
+            height: initial;
+            min-height: 300px;
+        }
+        &__image {
+            display: none;
+        }
+        &__content {
+            max-width: initial;
+            width: 100%;
+        }
+    }
+}

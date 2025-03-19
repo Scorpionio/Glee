@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glee</title>
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="header__container container-big">
+            <div class="header__inner">
+                <a class="header__logo logo" href="#">
+                    <img class="header__logo-img" src="images/icones/logo.svg" alt="logo">
+                    <p class="header__logo-text">Glee.</p>
+                </a>
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__list-item">
+                            <a class="nav__list-link" href="#">Home +</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-link" href="#">About</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-link" href="#">Services</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-link" href="#">Pages +</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-link" href="#">News</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__user user">
+                    <a class="user__search">
+                        <img src="images/icones/search.svg" alt="search">
+                    </a>
+                    <div class="user__box">
+                        <a class="user__favorite">
+                            <div class="user__number">0</div>
+                            <img src="images/icones/favorite.png" alt="favorite">
+                        </a>
+                        <div class="user__box-line"></div>
+                        <a class="user__store">
+                            <div class="user__number">0</div>
+                            <img src="images/icones/store.svg" alt="store">
+                        </a>
+                    </div>
+                    <a class="user__menu" href="#">
+                        <img src="images/icones/menu.svg" alt="menu">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="site-name">
+            <div class="site-name__inner">
+                <h1 class="site-name__title">Blog</h1>
+                <div class="site-name__breadcrumbs breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link"  href="#">Home</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <span class="breadcrumbs__link"  href="#">Blog</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="blog">
+            <div class="container-small">
+                <div class="blog__inner">
+                    <div class="blog__content content">
+                        <ul class="content__list">
+                            <li class="content__item">
+                                <div class="content__poster">
+                                    <img class="content__poster-img" src="images/poster/01.jpg" alt="poster img">
+                                    <div class="content__poster-info">
+                                        <div class="content__poster-date">
+                                            <span class="content__poster-icon">
+                                                <svg height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff">
+                                                    <path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/>
+                                                </svg>
+                                            </span>
+                                            28 JANUARY, 2020
+                                        </div>
+                                        <a class="content__poster-author" href="#">
+                                            <span class="content__poster-icon">
+                                                <svg height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff">
+                                                    <path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/>
+                                                </svg>
+                                            </span>
+                                            BY ADMIN
+                                        </a>
+                                    </div>
+                                </div>
+                                <h3 class="content__title">Fonsectetur adipisicing elit</h3>
+                                <p class="content__text">
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                                </p>
+                                <a class="content__button" href="#">
+                                    View More
+                                    <span class="content__button-img">
+                                        <svg width="22px" height="9px">
+                                            <path fill-rule="evenodd"  fill="rgb(163, 187, 200)" d="M0.296,5.473 L0.288,5.471 L17.244,5.471 L17.144,8.329 C17.089,8.384 17.060,8.458 17.060,8.534 C17.060,8.612 17.089,8.684 17.144,8.739 L17.316,8.912 C17.370,8.967 17.443,8.996 17.520,8.996 C17.597,8.996 17.669,8.967 17.724,8.913 L21.916,4.701 C21.970,4.647 22.000,4.574 21.1000,4.497 C22.000,4.420 21.970,4.346 21.916,4.293 L17.724,0.080 C17.669,0.026 17.597,-0.003 17.520,-0.003 C17.443,-0.003 17.370,0.026 17.316,0.080 L17.144,0.254 C17.089,0.307 17.060,0.380 17.060,0.458 C17.060,0.535 17.089,0.604 17.144,0.657 L17.257,3.522 L0.292,3.522 C0.133,3.522 -0.000,3.659 -0.000,3.818 L-0.000,5.188 C-0.000,5.347 0.137,5.473 0.296,5.473 Z"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="content__item">
+                                <div class="content__poster">
+                                    <img class="content__poster-img" src="images/poster/02.jpg" alt="poster img">
+                                    <div class="content__poster-info">
+                                        <div class="content__poster-date">
+                                            <span class="content__poster-icon">
+                                                <svg height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/></svg>
+                                            </span>
+                                            28 JANUARY, 2020
+                                        </div>
+                                        <a class="content__poster-author" href="#">
+                                            <span class="content__poster-icon">
+                                                <svg height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                                            </span>
+                                            BY ADMIN
+                                        </a>
+                                    </div>
+                                </div>
+                                <h3 class="content__title">Fonsectetur adipisicing elit</h3>
+                                <p class="content__text">
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                                </p>
+                                <a class="content__button" href="#">
+                                    View More
+                                    <span class="content__button-img">
+                                        <svg width="22px" height="9px">
+<path fill-rule="evenodd"  fill="rgb(163, 187, 200)"
+ d="M0.296,5.473 L0.288,5.471 L17.244,5.471 L17.144,8.329 C17.089,8.384 17.060,8.458 17.060,8.534 C17.060,8.612 17.089,8.684 17.144,8.739 L17.316,8.912 C17.370,8.967 17.443,8.996 17.520,8.996 C17.597,8.996 17.669,8.967 17.724,8.913 L21.916,4.701 C21.970,4.647 22.000,4.574 21.1000,4.497 C22.000,4.420 21.970,4.346 21.916,4.293 L17.724,0.080 C17.669,0.026 17.597,-0.003 17.520,-0.003 C17.443,-0.003 17.370,0.026 17.316,0.080 L17.144,0.254 C17.089,0.307 17.060,0.380 17.060,0.458 C17.060,0.535 17.089,0.604 17.144,0.657 L17.257,3.522 L0.292,3.522 C0.133,3.522 -0.000,3.659 -0.000,3.818 L-0.000,5.188 C-0.000,5.347 0.137,5.473 0.296,5.473 Z"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="content__item">
+                                <div class="content__poster">
+                                    <img class="content__poster-img" src="images/poster/03.jpg" alt="poster img">
+                                    <div class="content__poster-info">
+                                        <div class="content__poster-date">
+                                            <span class="content__poster-icon">
+                                                <svg height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/></svg>
+                                            </span>
+                                            28 JANUARY, 2020
+                                        </div>
+                                        <a class="content__poster-author" href="#">
+                                            <span class="content__poster-icon">
+                                                <svg height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                                            </span>
+                                            BY ADMIN
+                                        </a>
+                                    </div>
+                                </div>
+                                <h3 class="content__title">Fonsectetur adipisicing elit</h3>
+                                <p class="content__text">
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                                </p>
+                                <a class="content__button" href="#">
+                                    View More
+                                    <span class="content__button-img">
+                                        <svg width="22px" height="9px">
+<path fill-rule="evenodd"  fill="rgb(163, 187, 200)"
+ d="M0.296,5.473 L0.288,5.471 L17.244,5.471 L17.144,8.329 C17.089,8.384 17.060,8.458 17.060,8.534 C17.060,8.612 17.089,8.684 17.144,8.739 L17.316,8.912 C17.370,8.967 17.443,8.996 17.520,8.996 C17.597,8.996 17.669,8.967 17.724,8.913 L21.916,4.701 C21.970,4.647 22.000,4.574 21.1000,4.497 C22.000,4.420 21.970,4.346 21.916,4.293 L17.724,0.080 C17.669,0.026 17.597,-0.003 17.520,-0.003 C17.443,-0.003 17.370,0.026 17.316,0.080 L17.144,0.254 C17.089,0.307 17.060,0.380 17.060,0.458 C17.060,0.535 17.089,0.604 17.144,0.657 L17.257,3.522 L0.292,3.522 C0.133,3.522 -0.000,3.659 -0.000,3.818 L-0.000,5.188 C-0.000,5.347 0.137,5.473 0.296,5.473 Z"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="content__item">
+                                <div class="content__poster">
+                                    <img class="content__poster-img" src="images/poster/04.jpg" alt="poster img">
+                                    <div class="content__poster-info">
+                                        <div class="content__poster-date">
+                                            <span class="content__poster-icon">
+                                                <svg height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/></svg>
+                                            </span>
+                                            28 JANUARY, 2020
+                                        </div>
+                                        <a class="content__poster-author" href="#">
+                                            <span class="content__poster-icon">
+                                                <svg height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                                            </span>
+                                            BY ADMIN
+                                        </a>
+                                    </div>
+                                </div>
+                                <h3 class="content__title">Fonsectetur adipisicing elit</h3>
+                                <p class="content__text">
+                                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                                </p>
+                                <a class="content__button" href="#">
+                                    View More
+                                    <span class="content__button-img">
+                                        <svg width="22px" height="9px">
+<path fill-rule="evenodd"  fill="rgb(163, 187, 200)"
+ d="M0.296,5.473 L0.288,5.471 L17.244,5.471 L17.144,8.329 C17.089,8.384 17.060,8.458 17.060,8.534 C17.060,8.612 17.089,8.684 17.144,8.739 L17.316,8.912 C17.370,8.967 17.443,8.996 17.520,8.996 C17.597,8.996 17.669,8.967 17.724,8.913 L21.916,4.701 C21.970,4.647 22.000,4.574 21.1000,4.497 C22.000,4.420 21.970,4.346 21.916,4.293 L17.724,0.080 C17.669,0.026 17.597,-0.003 17.520,-0.003 C17.443,-0.003 17.370,0.026 17.316,0.080 L17.144,0.254 C17.089,0.307 17.060,0.380 17.060,0.458 C17.060,0.535 17.089,0.604 17.144,0.657 L17.257,3.522 L0.292,3.522 C0.133,3.522 -0.000,3.659 -0.000,3.818 L-0.000,5.188 C-0.000,5.347 0.137,5.473 0.296,5.473 Z"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="content__pagination pagination">
+                            <a class="pagination__prev pagination__item" href="#">Prev</a>
+                            <ul class="pagination__list">
+                                <li class="pagination__page pagination__item pagination__item--active">
+                                    <a class="pagination__link" href="#">1</a>
+                                </li>
+                                <li class="pagination__page pagination__item">
+                                    <a class="pagination__link" href="#">2</a>
+                                </li>
+                                <li class="pagination__page pagination__item">
+                                    <a class="pagination__link" href="#">3</a>
+                                </li>
+                            </ul>
+                            <a class="pagination__next pagination__item" href="#">Next</a>
+                        </div>
+                    </div>
+                    <div class="blog__filter filter">
+                        <form class="filter-search__form filter-item" action="#" method="get">
+                            <input class="filter-search__input" name="s" type="search">
+                            <button class="filter-search__btn" type="submit">
+                                <div class="filter-search__btn-img">
+                                    <svg  width="18px" height="18px">
+<path fill-rule="evenodd"  fill="rgb(9, 64, 116)"
+ d="M17.249,17.920 C17.098,17.920 16.946,17.862 16.830,17.746 L11.531,12.448 C10.398,13.393 8.941,13.962 7.353,13.962 C3.752,13.962 0.822,11.032 0.822,7.431 C0.822,3.829 3.752,0.899 7.353,0.899 C10.955,0.899 13.884,3.829 13.884,7.431 C13.884,9.018 13.316,10.475 12.371,11.609 L17.669,16.907 C17.785,17.023 17.843,17.175 17.843,17.327 C17.843,17.478 17.785,17.630 17.669,17.746 C17.553,17.862 17.401,17.920 17.249,17.920 ZM7.353,2.087 C4.407,2.087 2.010,4.484 2.010,7.431 C2.010,10.377 4.407,12.775 7.353,12.775 C10.300,12.775 12.698,10.377 12.698,7.431 C12.698,4.484 10.300,2.087 7.353,2.087 Z"/>
+                                    </svg>
+                                </div>
+                            </button>
+                        </form>
+                        <div class="filter-category filter-item">
+                            <h3 class="filter-category__title filter__title">Category</h3>
+                            <form class="filter-category__form" action="#">
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="radio" name="category"> 
+                                    <div class="filter-category__box">
+                                        <span class="filter-category__text">Chair</span>
+                                        <img class="filter-category__image" src="images/icones/arrow-small.svg" alt="arrow icon">
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="radio" name="category"> 
+                                    <div class="filter-category__box">
+                                        <span class="filter-category__text">Table</span>
+                                        <img class="filter-category__image" src="images/icones/arrow-small.svg" alt="arrow icon">
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="radio" name="category"> 
+                                    <div class="filter-category__box">
+                                        <span class="filter-category__text">Lamp</span>
+                                        <img class="filter-category__image" src="images/icones/arrow-small.svg" alt="arrow icon">
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="radio" name="category"> 
+                                    <div class="filter-category__box">
+                                        <span class="filter-category__text">Watch</span>
+                                        <img class="filter-category__image" src="images/icones/arrow-small.svg" alt="arrow icon">
+                                    </div>
+                                </label>
+                                <label class="filter-category__label">
+                                    <input class="filter-category__input" type="radio" name="category"> 
+                                    <div class="filter-category__box">
+                                        <span class="filter-category__text">Clock</span>
+                                        <img class="filter-category__image" src="images/icones/arrow-small.svg" alt="arrow icon">
+                                    </div>
+                                </label>
+                            </form>
+                        </div>
+                        <div class="filter-post filter-item">
+                            <h3 class="filter-post__title filter__title">Recent Posts</h3>
+                            <ul class="filter-post__list">
+                                <li class="filter-post__item">
+                                    <img class="filter-post__img" src="images/posts/01.jpg" alt="post img">
+                                    <div class="filter-post__content">
+                                        <div class="filter-post__text">Corem ipsum dolor tetur adipisicing elit</div>
+                                        <div class="filter-post__info">
+                                            <span class="filter-post__info-img">
+                                                <svg height="24px" viewBox="0 -960 960 960" width="24px" fill="#9a9a9a"><path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/></svg>
+                                            </span>
+                                            28 JANUARY, 2020</div>
+                                    </div>
+                                </li>
+                                <li class="filter-post__item">
+                                    <img class="filter-post__img" src="images/posts/02.jpg" alt="post img">
+                                    <div class="filter-post__content">
+                                        <div class="filter-post__text">Fdipisicing elit, sed do eiusmod tempor</div>
+                                        <div class="filter-post__info">
+                                            <span class="filter-post__info-img">
+                                                <svg height="24px" viewBox="0 -960 960 960" width="24px" fill="#9a9a9a"><path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/></svg>
+                                            </span>
+                                            28 JANUARY, 2020</div>
+                                    </div>
+                                </li>
+                                <li class="filter-post__item">
+                                    <img class="filter-post__img" src="images/posts/03.jpg" alt="post img">
+                                    <div class="filter-post__content">
+                                        <div class="filter-post__text">Eonsectetur adipisicing elit, sed do eiusmod </div>
+                                        <div class="filter-post__info">
+                                            <span class="filter-post__info-img">
+                                                <svg height="24px" viewBox="0 -960 960 960" width="24px" fill="#9a9a9a"><path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/></svg>
+                                            </span>
+                                            28 JANUARY, 2020</div>
+                                    </div>
+                                </li>
+                                <li class="filter-post__item">
+                                    <img class="filter-post__img" src="images/posts/04.jpg" alt="post img">
+                                    <div class="filter-post__content">
+                                        <div class="filter-post__text">gnim ad minim veniam, quis nostrud </div>
+                                        <div class="filter-post__info">
+                                            <span class="filter-post__info-img">
+                                                <svg height="24px" viewBox="0 -960 960 960" width="24px" fill="#9a9a9a"><path d="M200-80q-33 0-56.5-23.5T120-160v-560q0-33 23.5-56.5T200-800h40v-80h80v80h320v-80h80v80h40q33 0 56.5 23.5T840-720v560q0 33-23.5 56.5T760-80H200Zm0-80h560v-400H200v400Zm0-480h560v-80H200v80Zm0 0v-80 80Zm280 240q-17 0-28.5-11.5T440-440q0-17 11.5-28.5T480-480q17 0 28.5 11.5T520-440q0 17-11.5 28.5T480-400Zm-160 0q-17 0-28.5-11.5T280-440q0-17 11.5-28.5T320-480q17 0 28.5 11.5T360-440q0 17-11.5 28.5T320-400Zm320 0q-17 0-28.5-11.5T600-440q0-17 11.5-28.5T640-480q17 0 28.5 11.5T680-440q0 17-11.5 28.5T640-400ZM480-240q-17 0-28.5-11.5T440-280q0-17 11.5-28.5T480-320q17 0 28.5 11.5T520-280q0 17-11.5 28.5T480-240Zm-160 0q-17 0-28.5-11.5T280-280q0-17 11.5-28.5T320-320q17 0 28.5 11.5T360-280q0 17-11.5 28.5T320-240Zm320 0q-17 0-28.5-11.5T600-280q0-17 11.5-28.5T640-320q17 0 28.5 11.5T680-280q0 17-11.5 28.5T640-240Z"/></svg>
+                                            </span>
+                                            28 JANUARY, 2020</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="members">
+            <div class="container-small">
+                <div class="members__inner">
+                    <img class="members__image" src="images/members/01.png" alt="member">
+                    <img class="members__image" src="images/members/02.png" alt="member">
+                    <img class="members__image" src="images/members/03.png" alt="member">
+                    <img class="members__image" src="images/members/04.png" alt="member">
+                    <img class="members__image" src="images/members/05.png" alt="member">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container container-small">
+            <div class="footer-top">
+                <div class="footer-top__social">
+                    <a class="footer-top__logo logo" href="#">
+                        <img class="header__logo-img" src="images/icones/logo.svg" alt="logo">
+                        <p class="header__logo-text">Glee.</p>
+                    </a>
+                    <a class="footer-top__adress" href="#">ADDRESS: 4772 Wines Lane
+                        Houston, TX 77032</a>
+                    <a class="footer-top__tel" href="tel:8323475843">Telephone: +832-347-5843</a>
+                    <a class="footer-top__email" href="mailto:contact@Glee.com">Email: contact@Glee.com</a>
+                </div>
+                <div class="footer-top__item">
+                    <h6 class="footer-top__title">Services</h6>
+                    <a class="footer-top__item-link" href="#">About us</a>
+                    <a class="footer-top__item-link" href="#">Return Policy</a>
+                    <a class="footer-top__item-link" href="#">Our Blog</a>
+                    <a class="footer-top__item-link" href="#">Contact Us</a>
+                    <a class="footer-top__item-link" href="#">Terms & Condition</a>
+                </div>
+                <div class="footer-top__item footer-top__item-flex">
+                    <h6 class="footer-top__title">Account</h6>
+                    <a class="footer-top__item-link" href="#">Your Account</a>
+                    <a class="footer-top__item-link" href="#">Checkout</a>
+                    <a class="footer-top__item-link" href="#">Login</a>
+                    <a class="footer-top__item-link" href="#">Register</a>
+                </div>
+                <div class="footer-top__output">
+                    <h6 class="footer-top__title">newsletter</h6>
+                    <p class="footer-top__output-text" href="#">Subscribe by our newsletter and get
+                        update protidin.</p>
+                    <form action="" class="footer-top__output-form">
+                        <input type="email" placeholder="Email address" required>
+                        <button class="button" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom__copy">©2020 CopyRight Example. All rights reserved.</div>
+                <ul class="footer-bottom__list">
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">Home</a>
+                    </li>
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">About</a>
+                    </li>
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">Blog</a>
+                    </li>
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

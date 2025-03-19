@@ -1,0 +1,44 @@
+.members {
+    background-color: $bg;
+    padding: 90px 0;
+    margin-bottom: 80px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__image {
+        height: 100%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .members {
+        &__inner {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .members {
+        &__inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            row-gap: 45px;
+        }
+        &__image {
+            height: initial;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .members {
+        &__inner {
+            grid-template-columns: 1fr;
+        }
+    }
+}

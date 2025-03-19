@@ -1,0 +1,122 @@
+.top-slider {
+    &__inner {
+        background-color: #fcd7b6; 
+        padding: 100px 0 45px 0;
+    }
+    &__box {
+        max-width: 1430px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    &__item {
+        margin-bottom: 10px;
+        padding: 0 10px;
+    }
+    &__item-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__content {
+        padding-left: 1px;
+        max-width: 415px;
+    }
+    &__title {
+        font-size: 72px;
+        line-height: 70px;
+        color: #243f4d;
+        @extend %rubik-500;
+        margin-bottom: 35px;    
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 42px;
+    }
+    &__button {
+        display: inline-block;   
+    }
+    &__deco {
+        position: relative;
+        width: 640px;
+        height: 640px;
+        background: linear-gradient(90deg, rgba(255, 219, 187, 0), rgb(255, 255, 255) 100%);
+        border-radius: 50%;
+    }
+    &__deco-img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 115px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .top-slider {
+        &__deco {
+            height: 540px;
+            width: 540px;
+        }
+        &__deco-img {
+            right: 50px;
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .top-slider {
+        &__inner {
+            padding: 60px 0 30px 0;
+        }
+        &__content {
+            padding-left: 1px;
+            max-width: 400px;
+        }
+        &__title {
+            font-size: 54px;
+            line-height: 58px;
+            color: #243f4d;
+            margin-bottom: 30px;
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__deco {
+            height: 420px;
+            width: 420px;
+        }
+    }
+}
+
+@media (max-width: 910px) {
+    .top-slider {
+        &__item {
+            margin-bottom: 20px;
+            padding: 0 35px;
+        }
+        &__content {
+            max-width: initial;
+        }
+        &__deco {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 628px) {
+    .top-slider {
+        &__item {
+            padding: initial;
+        }
+        &__title {
+            font-size: 40px;
+            line-height: 46px;
+            margin-bottom: 15px;
+        }
+        &__text {
+            margin-bottom: 30px;
+        }
+    }
+    
+}

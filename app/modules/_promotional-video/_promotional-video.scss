@@ -1,0 +1,43 @@
+.promotional-video {
+    margin-bottom: 120px;
+    &__inner {
+        height: 500px;
+    }
+    &__popup {
+        background-color: gray;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+        position: relative;
+    }
+    &__play {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1080px) {
+    .promotional-video {
+        &__inner {
+            height: 400px;
+        }
+    }
+}
+
+@media (max-width: 628px) {
+    .promotional-video {
+        &__inner {
+            height: 250px;
+        }
+        &__play {
+            img {
+                height: 100px;
+            }
+        }
+    }
+}

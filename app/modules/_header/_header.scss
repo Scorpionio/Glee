@@ -1,0 +1,102 @@
+.header {
+    &__inner {
+        height: 145px;
+        position: relative;
+    }
+    &__logo {
+        position: absolute;
+        transform: translateY(-50%);
+        left: 0;
+        top: 50%;
+    }
+    &__nav {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        .nav__list {
+            display: flex;
+            align-items: center;
+            .nav__list-item {
+                a {
+                    @extend %rubik-700;
+                    color: $text;
+                    font-size: 15px;
+                    &:hover {
+                        color: rgb(22, 48, 59);
+                    }
+                }
+                &:not(:last-child) {
+                    margin-right: 35px;
+                }
+            }
+        }
+    }
+    &__user {
+        position: absolute;
+        transform: translateY(-50%);
+        right: 0;
+        top: 50%;
+        display: flex;
+        text-align: center;
+        .user__search {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #edf1f4;
+            position: relative;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .user__box {
+            display: flex;
+            align-items: center;
+            margin: 0 18px 0 21px;
+            background-color: #fcd7b6;
+            border-radius: 25px;
+            height: 50px;
+            .user__favorite {
+                margin: 0 26px 0 41px;
+                position: relative;
+            }
+            .user__box-line {
+                height: 33px;
+                width: 2px;
+                background-color: #fde7d3;
+            }
+            .user__store {
+                margin: 0 41px 0 26px;
+                position: relative;
+            }
+            .user__number {
+                @extend %dmsans-500;
+                font-size: 10px;
+                line-height: 17px;
+                height: 17px;
+                width: 17px;
+                background-color: #fff;
+                top: -8px;
+                position: absolute;
+                right: -10px;
+                border-radius: 50%;
+            }
+        }
+        .user__menu {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #a3bbc8;
+            position: relative;
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}

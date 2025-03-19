@@ -1,0 +1,114 @@
+.articles {
+    &__inner {
+        margin-bottom: -187px;
+    }
+    &__description {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 45px;
+    }
+    &__title {
+        text-align: left;
+    }
+    &__view {
+        @extend %dmsans-700;
+        color: #262626;
+        text-wrap: nowrap;
+        cursor: pointer;
+        &::after {
+            content: url(../images/icones/arrow-small.svg);
+            margin-left: 16px;
+        }
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    &__item {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 5px;
+        box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+        background-color: #fff;    
+    }
+    &__image {
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        height: 250px;
+        object-fit: cover;
+    }
+    &__content {
+        height: 100%;
+        padding: 0 27px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: -16px;
+    }
+    &__news {
+        @extend %poppins-700;
+        font-size: 14px;
+        line-height: 20px;
+        color: white;
+        background-color: $price-color;
+        padding: 6px 30px;
+        display: inline-block;
+        border-radius: 16px;
+        margin-bottom: 20px;
+    }
+    &__text {  
+        @extend %dmsans-700;
+        font-size: 18px;
+        color: #262626;
+        flex: 1 1 auto;
+        margin-bottom: 15px;
+    }
+    &__post-info {
+        border-top: 1px solid #e0e0e0;
+        display: flex;
+        font-size: 12px;
+        line-height: 30px;
+        color: #222933;
+        width: 100%;
+        padding-top: 15px;
+    }
+    &__date {
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .articles {
+        &__inner {
+            margin-bottom: -140px;
+        }
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__item:nth-child(3) {
+            grid-column: span 2;
+        }
+    }
+}
+
+@media (max-width: 628px) {
+    .articles {
+        &__description {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__title {
+            margin-bottom: 30px;
+        }
+        &__list {
+            grid-template-columns: initial;
+        }
+        &__item:nth-child(3) {
+            grid-column: initial;
+        }
+    }
+}

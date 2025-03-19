@@ -1,0 +1,119 @@
+.design {
+    padding-top: 75px;
+    margin-bottom: 120px;
+    &__title {
+        margin-bottom: 35px;
+    }
+    ul[class].design__sort {
+        margin-bottom: 65px;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 35px;
+    }
+    &__item {
+        background-color: #f8f8f8;
+        padding: 40px 35px;
+        position: relative;
+        height: 250px;
+        overflow: hidden;
+    }
+    &__item:hover .design__item-image {
+        transform: scale(1.055);
+    }
+    &__item-title {
+        font-size: 20px;
+        color: #000;
+        @extend %dmsans-700;
+        margin-bottom: 15px;
+        max-width: 185px;
+    }
+    &__item-subtitle {
+        color: $price-color;
+        @extend %dmsans-700;
+    }
+    &__item-image {
+        position: absolute;
+        left: 100px;
+        bottom: 30px;
+        transition: all 0.25s linear;
+    }
+    &__item-image--chair {
+        left: 200px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .design {
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        &__item {
+            max-width: initial;
+        }
+    }
+}
+
+@media (max-width: 870px) {
+    .design {
+        &__list {
+            display: flex;
+            flex-direction: column;
+            max-width: initial;  
+        }
+        &__item {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__item-image {
+            position: initial;
+            width: 400px;
+            object-fit: contain;
+        }
+    }
+}
+
+@media (max-width: 710px) {
+    .design {
+        &__item {
+            height: initial;
+            min-height: max-content;
+        }
+        &__item-image {
+            width: 300px;
+            height: max-content;
+            margin-top: 35px;
+        }
+        &__item-image--chair {
+            margin-top: 0;
+            height: 200px;
+        }
+    }
+}
+
+@media (max-width: 628px) {
+    .design {
+        &__list {
+            margin-top: 25px;
+        }
+        &__item:hover .design__item-image {
+            transform: scale(2);
+        }
+        &__content {
+            z-index: 1;
+        }
+        &__item-image {
+            right: 0;
+            bottom: initial;
+            left: initial;
+            transform: scale(2);
+            opacity: 0.2;
+            filter: saturate(50%);
+        }
+        
+    }
+}

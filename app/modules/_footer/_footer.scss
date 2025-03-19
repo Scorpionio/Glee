@@ -1,0 +1,90 @@
+.footer {
+    &-top {
+        border-bottom: 1px solid #dae4e9;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 34px;
+        padding-bottom: 72px;
+        &__title {
+            color: $second-title;
+            @extend %dmsans-800;
+            font-size: 16px;
+            line-height: 21px;
+            text-transform: uppercase;
+            margin-top: 20px;
+            margin-bottom: 26px;
+        }
+        &__social {
+            width: 215px;
+        }
+        & a {
+            font-size: 14px;
+            line-height: 24px;
+            &:hover {
+                color: #2b2b2b;
+            }
+        }
+        & a:not(:first-child) {
+            display: block;
+        }
+        & a:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        & a:first-child {
+            margin-bottom: 30px;
+        }
+        &__item {
+            width: 135px;
+        }
+        &__output {
+            max-width: 270px;
+            &-text {
+                color: $second-text;
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 35px;
+            } 
+            &-form {
+                display: flex;
+                input {
+                    max-width: 170px;
+                    padding: 12px 12px 12px 16px;
+                    border: none;
+                    background-color: $bg;
+                    &::placeholder {
+                        @extend %dmsans-700;
+                        font-size: 12px;
+                        color: #234969;
+                    }
+                }
+            }
+        }
+    }
+    &-bottom {
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__copy {
+            color: $second-text;
+            font-size: 14px;
+            line-height: 32px;
+        }
+        &__list {
+            display: flex;
+        }
+        &__item {
+            height: max-content;
+        }
+        &__item:not(:last-child) {
+            border-right: 1px solid $second-text;
+            padding-right: 15px;
+        }
+        &__item:not(:first-child) {
+            padding-left: 15px;
+        }
+        &__link {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,89 @@
+$title: #243f4d;
+$color3: #333333;
+$second-title: #1f2044;
+$main-title: #191919;
+$text: #436372;
+$second-text: #7b7b7b;
+$bg: #fef7f0;
+$bg-element: #a3bbc8;
+$price-color: #a3bbc8;
+$border: #e6eaf0;
+
+%poppins-700 {
+    font-family: "Poppins-Bold", sans-serif;
+    font-weight: 700;
+}
+
+%poppins-600 {
+    font-family: "Poppins-SemiBold", sans-serif;
+    font-weight: 700;
+}
+
+%rubik-700 {
+    font-family: "Rubik-Bold", sans-serif;
+    font-weight: 700;
+}
+
+%rubik-500 {
+    font-family: "Rubik-Medium", sans-serif;
+    font-weight: 500;
+}
+
+%rubik-400 {
+    font-family: "Rubik-Regular", sans-serif;
+    font-weight: 400;
+}
+
+%dmsans-900 {
+    font-family: "DMSans-Black", sans-serif;
+    font-weight: 900;
+}
+
+%dmsans-800 {
+    font-family: "DMSans-ExtraBold", sans-serif;
+    font-weight: 800;
+}
+
+%dmsans-700 {
+    font-family: "DMSans-Bold", sans-serif;
+    font-weight: 700;
+}
+
+%dmsans-500 {
+    font-family: "DMSans-Medium", sans-serif;
+    font-weight: 500;
+}
+
+%dmsans-400 {
+    font-family: "DMSans-Regular", sans-serif;
+    font-weight: 400;
+}
+
+%nunito-700 {
+    font-family: "Nunito-Bold", sans-serif;
+    font-weight: 700;
+}
+
+%deco-curcle {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    right: -4px;
+    bottom: -3px;
+    opacity: 0.341;
+    background-color: #afc3cd;
+    border-radius: 50%;
+}
+
+%delete-input {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+    &:checked + .filter-category__box {
+        background-color: #edf1f4;
+    }
+}
+
